@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', sans-serif;
+  background: #090612;
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 8px;
+}
+
+.App-header .logo {
+    max-height: 100px;
+    width: auto;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.start-section {
+  text-align: center;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.24vh;
+}
+
+.start-section .logo {
+  width: 100%;
+  max-width: 40vw;
+}
+
+.primary-btn,
+.secondary-btn {
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-weight: bold;
+  height: fit-content;
+  display: block;
+  width: fit-content;
+}
+
+.primary-btn {
+  color: #090612;
+  background: #80D927;
+  box-shadow: 8px 8px 0 0 #5630A2;
+}
+
+.primary-btn:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+a.primary-btn {
+  text-decoration: none;
+  margin: 32px auto;
+}
+
+.secondary-btn {
+  color: #FFFFFF;
+  background: #5630A2;
+  box-shadow: 8px 8px 0 0 #80D927;
+}
+
+.secondary-btn:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+.secondary-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.story-section {
+  padding: 30px;
+}
+
+.news-box {
+  margin-bottom: 32px;
+}
+
+.news-summary, .story-content {
+  color: #ffffff;
+  line-height: 1.6;
+  white-space: pre-line;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.story-box {
+  margin-bottom: 32px;
+}
+.news-box {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #5630A266;
+}
+
+.continuation {
+  margin-top: 32px;
+}
+
+.user-direction {
+  padding: 0px 24px;
+  margin-bottom: 32px;
+}
+
+/* .input-section {
+  margin: 30px 0;
+}
+
+.input-section h3 {
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+.input-section input:focus {
+  outline: none;
+  border-color: #667eea;
+} */
+
+.story-options {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.option-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #5630A2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  color: #fff;
+  background: transparent;
+  font-family: inherit; 
+  font-size: 1rem;
+}
+
+.option-btn:hover:not(:disabled) {
+  border-color: #80D927;
+  transform: scale(1.05);
+}
+
+.option-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.story-end {
+  margin-top: 32px;
+}
